@@ -1,0 +1,26 @@
+{
+    "name": "SpeedDial JS",
+    "description": "Add common sentences for autocompletion",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "commands": {
+        "autofill": {
+            "suggested_key": {
+                "default": "Ctrl+B"
+            },
+            "description": "Trigger autofill behaviour"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ]
+}
